@@ -1,5 +1,4 @@
 ## User Stories
-
 As a child  
 so I can complete a sentence,  
 I can click and select a word.  
