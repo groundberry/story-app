@@ -1,8 +1,51 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 2em;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 a {
   color: #00B7FF;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sentence,
+.words {
+  height: 100vh;
+}
+
+.new-sentence h1 {
+  font-size: 6em;
+}
+
+
+.words h1 {
+  font-size: 2em;
+}
+
+.new-sentence h2 {
+  font-size: 3em;
+}
+
+.sentence {
+  background-color: #ccffff;
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+.new-sentence {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.words {
+  background-color: #ffffcc;
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 3em;
+  padding-top: 30px;
 }
