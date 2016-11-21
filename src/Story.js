@@ -22,9 +22,3 @@ Story.prototype.objectPicker = function (index) {
   var test = [].concat.apply([], this.completeSentence);
   console.log(test.join());
 };
-
-// arr.splice(index, 0, item)
-
-
-
-//console.log(this.completeSentence[0]); == sentencesArray
