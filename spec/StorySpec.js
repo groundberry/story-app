@@ -14,5 +14,11 @@ describe ("Story", function(){
     it ("It has a list of objects that can be picked from", function() {
       expect(story.objectPicker(0)).toBe("toilet");
     });
+    
+    it ("returns a sentence template + subject - object", function() {
+      story.subjectSelector(1);
+      story.objectSelector(1);
+      expect(story.completeSentence).toContain("A dog sat on the sofa");
+    });
   });
 });
