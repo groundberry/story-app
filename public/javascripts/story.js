@@ -30,35 +30,24 @@ Story.prototype.consLog = function() {
   console.log(this.sentencesArray);
 };
 
-Story.prototype.linkCreator = function () {
+Story.prototype.animalLinkCreator = function () {
+  this.subjectArray.forEach(function(animal) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='animal' href=#>" + this.subjectArray[0] + "</a>";
+    newLi.innerHTML = "<a class='animal' href=#>" + animal + "</a>";
     console.log(newLi);
     document.getElementById("animals").appendChild(newLi);
+});
 };
 
-// var firstWord = document.getElementById('animals');
-//
-//
-// Story.prototype.generateAnimalLinks = function () {
-//   console.log(story.subjectArray);
-//   this.subjectArray.forEach(function (animal) {
-//     firstWord.appendChild(generateAnimalLink(animal));
-//   });
-// };
-//
-//
-// function generateAnimalLink(animal) {
-//   var listItem = document.createElement('li');
-//   var link = document.createElement('a');
-//   link.className = 'Animal';
-//   link.href = '#';
-
-  // var linkText = document.createTextNode(animal)
+Story.prototype.placeLinkCreator = function () {
+  this.objectArray.forEach(function(place) {
+    var newLi = document.createElement("li");
+    newLi.innerHTML = "<a class='places' href=#>" + place + "</a>";
+    console.log(newLi);
+    document.getElementById("places").appendChild(newLi);
+});
+};
 
 var story = new Story();
-story.linkCreator();
-
-
-
-// story.generateAnimalLinks();
+story.animalLinkCreator();
+story.placeLinkCreator();
