@@ -10,4 +10,7 @@ $(document).ready(function(){
     $("#second-word").hide();
   });
 
+  $(".button").on('click',function(){
+    $(".second-sentence").show("slow");
+  });
 });
