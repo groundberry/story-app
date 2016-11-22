@@ -15,6 +15,29 @@ ul {
   list-style-type: none;
 }
 
+.button {
+  background-color: #0099cc;
+  color: #ffffcc;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  margin: 30px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  transition-duration: 0.4s;
+  border: 2px solid #008CBA;
+  cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffffcc;
+    color: #0099cc;
+    text-decoration: none;
+}
+
+
 .sentence,
 .words {
   height: 100vh;
