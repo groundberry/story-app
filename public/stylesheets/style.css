@@ -1,8 +1,74 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 2em;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 a {
   color: #00B7FF;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  background-color: #0099cc;
+  color: #ffffcc;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  margin: 30px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  transition-duration: 0.4s;
+  border: 2px solid #008CBA;
+  cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffffcc;
+    color: #0099cc;
+    text-decoration: none;
+}
+
+
+.sentence,
+.words {
+  height: 100vh;
+}
+
+.new-sentence h1 {
+  font-size: 6em;
+}
+
+
+.words h1 {
+  font-size: 2em;
+}
+
+.new-sentence h2 {
+  font-size: 3em;
+}
+
+.sentence {
+  background-color: #ccffff;
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+.new-sentence {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.words {
+  background-color: #ffffcc;
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 3em;
+  padding-top: 30px;
 }
