@@ -12,81 +12,81 @@ Story = function() {
 };
 
 Story.prototype.name1LinkCreator = function () {
-  this.name1Array.forEach(function(name) {
+  this.name1Array.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='name1' href=#>" + name + "</a>";
+    newLi.innerHTML = "<a class='name1' href=#>" + value + "</a>";
     document.getElementById("name1").appendChild(newLi);
 });
 };
 
 Story.prototype.animal1LinkCreator = function () {
-  this.animal1Array.forEach(function(animal) {
+  this.animal1Array.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='animal1' href=#>" + animal + "</a>";
+    newLi.innerHTML = "<a class='animal1' href=#>" + value + "</a>";
     document.getElementById("animal1").appendChild(newLi);
 });
 };
 
 Story.prototype.toyLinkCreator = function () {
-  this.toysArray.forEach(function(toy) {
+  this.toysArray.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='toys' href=#>" + toy + "</a>";
+    newLi.innerHTML = "<a class='toys' href=#>" + value + "</a>";
     document.getElementById("toys").appendChild(newLi);
 });
 };
 
 Story.prototype.choreLinkCreator = function () {
-  this.choresArray.forEach(function(chore) {
+  this.choresArray.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='chores' href=#>" + chore + "</a>";
+    newLi.innerHTML = "<a class='chores' href=#>" + value + "</a>";
     document.getElementById("chores").appendChild(newLi);
 });
 };
 
 Story.prototype.placeLinkCreator = function () {
-  this.placesArray.forEach(function(place) {
+  this.placesArray.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='place' href=#>" + place + "</a>";
+    newLi.innerHTML = "<a class='place' href=#>" + value + "</a>";
     document.getElementById("places").appendChild(newLi);
 });
 };
 
 Story.prototype.foodLinkCreator = function () {
-  this.foodArray.forEach(function(food) {
+  this.foodArray.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='food' href=#>" + food + "</a>";
+    newLi.innerHTML = "<a class='food' href=#>" + value + "</a>";
     document.getElementById("food").appendChild(newLi);
 });
 };
 
 Story.prototype.name2LinkCreator = function () {
-  this.name2Array.forEach(function(name) {
+  this.name2Array.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='name2' href=#>" + name + "</a>";
+    newLi.innerHTML = "<a class='name2' href=#>" + value + "</a>";
     document.getElementById("name2").appendChild(newLi);
 });
 };
 
 Story.prototype.animal2LinkCreator = function () {
-  this.animal1Array.forEach(function(animal) {
+  this.animal1Array.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='animal2' href=#>" + animal + "</a>";
+    newLi.innerHTML = "<a class='animal2' href=#>" + value + "</a>";
     document.getElementById("animal2").appendChild(newLi);
 });
 };
 
 Story.prototype.gameLinkCreator = function () {
-  this.gameArray.forEach(function(animal) {
+  this.gameArray.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='game' href=#>" + animal + "</a>";
+    newLi.innerHTML = "<a class='game' href=#>" + value + "</a>";
     document.getElementById("game").appendChild(newLi);
 });
 };
 
 Story.prototype.feelingsLinkCreator = function () {
-  this.feelingsArray.forEach(function(animal) {
+  this.feelingsArray.forEach(function(value) {
     var newLi = document.createElement("li");
-    newLi.innerHTML = "<a class='feelings' href=#>" + animal + "</a>";
+    newLi.innerHTML = "<a class='feelings' href=#>" + value + "</a>";
     document.getElementById("feelings").appendChild(newLi);
 });
 };
