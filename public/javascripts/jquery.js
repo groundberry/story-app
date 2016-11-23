@@ -1,13 +1,14 @@
 $(document).ready(function(){
 
   $(".animal").on('click',function(){
-    $(this).insertAfter("#first-word");
-    $("#first-word").hide();
+    $("#first-word").replaceWith(this);
   });
 
   $(".place").on('click',function(){
-    $(this).insertAfter("#second-word");
-    $("#second-word").hide();
+    $("#second-word").replaceWith(this);
   });
 
+  $(".button").on('click',function(){
+    $(".second-sentence").show("slow");
+  });
 });
