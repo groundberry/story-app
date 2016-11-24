@@ -6,11 +6,17 @@ function getSentence() {
       return '<span id="word' + (position++) + '">____</span>';
     });
     $('#sentence').html(sentence);
-    // TODO: fill animals and places too
   });
 }
 
 $(document).ready(function () {
+
+  $('.next-word-button').on('click', function () {
+    $('.choice').replaceWith();
+  });
+
+
+
 
   $('.name1').on('click', function () {
     $('#word0').replaceWith(this);
@@ -28,7 +34,7 @@ $(document).ready(function () {
     $('#word3').replaceWith(this);
   });
 
-  $('.place').on('click', function () {
+  $('.places').on('click', function () {
     $('#word4').replaceWith(this);
   });
 
