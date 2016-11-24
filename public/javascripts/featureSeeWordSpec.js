@@ -1,4 +1,3 @@
-
 function seeWord() {
   if(document.getElementById('animal1') === null) {
     console.log("Feature test: Test failed");
@@ -6,7 +5,6 @@ function seeWord() {
     console.log("Feature test: Test passed");
   }
 }
-
 
 function listContainsAnimal() {
   var word = document.getElementById('animal1').innerHTML;
@@ -26,12 +24,8 @@ function spanCheck() {
   }
 }
 
-
 function clickMove() {
-  bert = document.querySelectorAll('#name1 > li:nth-child(1) > a')[0].innerHTML;
-  console.log(bert);
 }
-
 
 function checkWord() {
   var cells = document.getElementsByTagName("li");
