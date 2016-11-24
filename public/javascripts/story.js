@@ -11,37 +11,39 @@ var items = {
     'feelings': ["happy", "excited", "sleepy", "bored", "sad"]
   };
 
+var wordIndex = 0;
 
-var getTitle = function () {
-  var key = Object.keys(items)[0];
+var updateTitle = function () {
+  var key = Object.keys(items)[wordIndex];
   document.getElementById("title").innerHTML = key;
-  getWords(key);
+  updateWords(key);
 };
 
-var getWords = function (key) {
+var updateWords = function (key) {
   var arrayOfWords = items[key];
+  document.getElementById('words').innerHTML = '';
   arrayOfWords.forEach(function(word) {
     var link = document.createElement("li");
-    link.innerHTML = "<a class=" + key + "' href='#'>" + word + "</a>";
+    link.innerHTML = "<a class='" + key + "' href='#'>" + word + "</a>";
     document.getElementById('words').appendChild(link);
   });
 };
 
-
-
-function changeText(key) {
-  document.getElementById('word0').innerHTML = document.getElementsByClassName('Name')[0].innerHTML.fontcolor('#337ab7');
+function listenToClickOnWord() {
+  document.getElementById('words').addEventListener('click',function (evt) {
+    var target = evt.target;
+    document.getElementById('word' + wordIndex).innerHTML = target.innerHTML;
+  });
 }
 
-window.onload = function() {
-  document.getElementsByClassName('Name')[0].addEventListener('click',function () {
-    changeText();
+var listenToClickOnNextWordButton = function () {
+  document.getElementById('next-word').addEventListener('click',function () {
+    wordIndex += 1;
+    updateTitle();
   });
 };
 
 
-
-
-
-getTitle();
-linkCreator();
+updateTitle();
+listenToClickOnWord();
+listenToClickOnNextWordButton();
