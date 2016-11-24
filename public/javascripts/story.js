@@ -23,4 +23,19 @@
     });
   };
 
+
+  function changeText() {
+    console.log(document.getElementsByClassName('name1')[0]);
+    document.getElementById('word0').innerHTML = document.getElementsByClassName('name1')[0].innerHTML.fontcolor('#337ab7');
+  }
+
+
+  window.onload = function() {
+    document.getElementsByClassName('name1')[0].addEventListener('click',function () {
+      changeText();
+    });
+  };
+
+
+
   linkCreator();
