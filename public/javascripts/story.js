@@ -1,6 +1,6 @@
 var items = {
     'name': ["Bert", "Rupert", "Daisy", "Ruby", "Timmy"],
-    'animals': ["cat", "dog", "lion", "otter", "pig"],
+    'animals': ["cat", "dog", "lion", "donkey", "pig"],
     'toys': ["ball", "catapult", "cars", "bikes", "frisbees"],
     'chores': ["brushing their teeth", "tidying their room", "going shopping", "having a bath", "going to sleep"],
     'places': ["toilet", "sofa", "mat", "throne", "roof"],

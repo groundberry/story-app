@@ -26,6 +26,19 @@ span {
   color: #337ab7;
 }
 
+
+.new-sentence h1 {
+  font-size: 6em;
+}
+
+.words h1 {
+  font-size: 2em;
+}
+
+.new-sentence h2 {
+  font-size: 3em;
+}
+
 .button {
   background-color: #0099cc;
   color: #ffffcc;
@@ -54,27 +67,9 @@ span {
   margin-left: 5px;
 }
 
-
 .sentence,
 .words {
   height: 100vh;
-}
-
-#choice {
-  margin-bottom: 20px;
-  margin-left: 60px;
-}
-
-.new-sentence h1 {
-  font-size: 6em;
-}
-
-.words h1 {
-  font-size: 2em;
-}
-
-.new-sentence h2 {
-  font-size: 3em;
 }
 
 .sentence {
@@ -99,6 +94,18 @@ span {
   padding: 66px;
 }
 
-.second-sentence {
-  display: none;
+#choice {
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.paint-frame {
+  border-style: solid;
+  border-color: #337ab7;
+  background-color: #ffffcc;
+  border-width: medium;
+  width: 800px;
+  height: 300px;
+  margin-top: 40px;
+  border-radius: 15px;
 }
