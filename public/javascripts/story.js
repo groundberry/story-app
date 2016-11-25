@@ -10,17 +10,3 @@
       game: ["tag", "hide and seek", "sleeping lions", "hopscotch", "what's the time Mr Wolf"],
       feelings: ["happy", "excited", "sleepy", "bored", "sad"]
     };
-
-
-  var linkCreator = function () {
-    Object.keys(items).forEach(function(key) {
-      var arr = items[key];
-      arr.forEach(function(item) {
-        var link = document.createElement("li");
-        link.innerHTML = "<a class='" + key + "' id='" + item + "' href='#'>" + item + "</a>";
-        document.getElementById(key).appendChild(link);
-      });
-    });
-  };
-
-  linkCreator();
