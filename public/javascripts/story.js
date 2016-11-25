@@ -1,12 +1,12 @@
 
 var items = {
-    'name': ["Bert", "Rupert", "Daisy", "Ruby", "Timmy"],
+    'name': ["Bert", "Rupert", "Bob", "Steve", "Timmy"],
     'animals': ["cat", "dog", "lion", "donkey", "pig"],
-    'toys': ["ball", "catapult", "cars", "bikes", "frisbees"],
-    'chores': ["brushing their teeth", "tidying their room", "going shopping", "having a bath", "going to sleep"],
+    'toys': ["dolls", "catapults", "cars", "bikes", "frisbees"],
+    'chores': ["brushing his teeth", "tidying his room", "going shopping", "having a bath", "going to sleep"],
     'places': ["toilet", "sofa", "mat", "throne", "roof"],
     'food': ["pizza", "chocolate", "carrots", "chips", "lettuce"],
-    'friend': ["Bob", "Steve", "Jimmy", "Anne", "Katy"],
+    'friend': ["Ruby", "Daisy", "Betty", "Anne", "Katy"],
     'animal:': ["monkey", "zebra", "duck", "cow", "penguin"],
     'game': ["tag", "hide and seek", "sleeping lions", "hopscotch", "what's the time Mr Wolf"],
     'feelings': ["happy", "excited", "sleepy", "bored", "sad"]

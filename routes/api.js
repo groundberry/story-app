@@ -3,7 +3,7 @@ var router = express.Router();
 
 var options = [
   {
-    sentence: "This is ____, and it is a ____. It loves playing with ____ and hates ____.  Its favourite place to sit is the ____, and it loves eating ____. Its best friend is ____, and it is a ____. They love playing ____ together, it makes them feel ____. "
+    sentence: "This is ____, and he is a ____. He loves playing with  ____ and hates ____.  His favourite place to sit is on the ____, and he loves eating ____. His best friend is ____, and she is a ____. They love playing ____ together, it makes them feel ____. "
 }
 ];
 
