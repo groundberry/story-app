@@ -16,6 +16,9 @@ var wordIndex = 0;
 var updateTitle = function () {
   var key = Object.keys(items)[wordIndex];
   document.getElementById("title").innerHTML = key;
+  if (wordIndex > 9) {
+    document.getElementById("title").innerHTML = 'The end';
+  }
   updateWords(key);
 };
 
