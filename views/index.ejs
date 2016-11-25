@@ -1,30 +1,41 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="row">
-      <div class="col-md-8 sentence">
-        <div class="new-sentence row">
-          <div class="col-md-8">
-            <h1>Sentence</h1>
-          </div>
-          <div class="next-sentence-button col-md-4">
-            <a class="button">Next sentence</a>
-          </div>
-          <div class="col-md-12">
-            <h2 id="sentence"></h2>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-8 sentence">
+      <div class="new-sentence row">
+        <div class="col-md-12">
+          <h1>Create your story</h1>
         </div>
+        <!-- <div class="next-word-button col-md-4">
+        <a class="button">Next word</a>
+      </div> -->
+      <div class="col-md-12">
+        <h2 id="sentence"></h2>
       </div>
-      <div class="col-md-4 words">
-        <div class="animals">
-          <h2 id="animals">Animals</h2>
-        </div>
-        <div class="places">
-          <h3 id="places">Places</h3>
-        </div>
+      <div class="col-md-12 paint-frame">
+        <canvas id="simple_sketch" width="800" height="300"></canvas>
+        <script type="text/javascript">
+        $(function() {
+          $('#simple_sketch').sketch();
+        });
+        </script>
       </div>
-    </body>
-  </html>
+    </div>
+  </div>
+  <div class="col-md-4 words">
+    <div id="choice">
+      <div id="title">
+      </div>
+      <ul id="words">
+      </ul>
+    </div>
+    <div class="next-word-button col-md-9 col-md-offset-1">
+      <a class="button" id="next-word">Next word</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -3,12 +3,12 @@ var router = express.Router();
 
 var options = [
   {
-    sentence: "The ____ lives in the ____."
-  },
-  {
-    sentence: "The ____ is sitting on the ____."
-  }
+    sentence: "This is ____, and it is a ____. It loves playing with ____ and hates ____.  Its favourite place to sit is the ____, and it loves eating ____. Its best friend is ____, and it is a ____. They love playing ____ together, it makes them feel ____. "
+}
 ];
+
+
+
 
 /* GET sentences. */
 router.get('/', function(req, res, next) {
