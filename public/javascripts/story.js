@@ -33,12 +33,10 @@ var updateWords = function (key) {
 };
 
 var generateImage = function (cartoon) {
-  if (document.getElementById("title").innerHTML == 'animal' || 'animals') {
-    var image = document.createElement("img");
-    image.src = "images/" + cartoon + ".png";
-    var src = document.getElementById('words');
-    src.appendChild(image);
-  }
+  var image = document.createElement('img');
+  image.src = "images/" + cartoon + ".png";
+  var src = document.getElementById('picture');
+  src.appendChild(image);
 };
 
 function listenToClickOnWord() {
@@ -46,7 +44,11 @@ function listenToClickOnWord() {
     var target = evt.target;
     var cartoon = target.innerHTML;
     document.getElementById('word' + wordIndex).innerHTML = target.innerHTML;
-    generateImage(cartoon);
+    var pet = document.getElementById("title").innerHTML;
+    console.log(pet);
+    if ( pet === 'animal' || 'animals') {
+      generateImage(cartoon);
+    }
   });
 }
 
