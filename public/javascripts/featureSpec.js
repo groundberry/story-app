@@ -1,5 +1,5 @@
 function seeWord() {
- if(document.getElementById('animal1') === null) {
+ if(document.querySelectorAll('#words > li:nth-child(1) > a:nth-child(1)') === null) {
    console.log("Feature test: Test failed");
  } else {
    console.log("Feature test: Test passed");
@@ -7,24 +7,13 @@ function seeWord() {
 }
 
 function listContainsAnimal() {
- var word = document.getElementById('animal1').innerHTML;
- var finding = word.includes("lion");
+ var word = document.querySelectorAll('#words')[0].innerHTML;
+ var finding = word.includes("Bert");
  if (finding === true) {
    console.log("Feature test: Test passed");
  } else {
    console.log("Feature test: Test failed");
  }
-}
-
-function spanCheck() {
- if (document.getElementsByTagName('word0').length === 0) {
-   console.log("Feature test: Test passed");
- } else {
-   console.log("Feature test: Test failed");
- }
-}
-
-function clickMove() {
 }
 
 function checkWord() {
@@ -43,5 +32,3 @@ function checkWord() {
  seeWord();
  checkWord();
  listContainsAnimal();
- spanCheck();
- clickMove();
