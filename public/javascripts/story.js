@@ -1,4 +1,3 @@
-
 var items = {
     'name': ["Bert", "Rupert", "Bob", "Steve", "Timmy"],
     'animals': ["cat", "dog", "lion", "donkey", "pig"],
@@ -33,10 +32,21 @@ var updateWords = function (key) {
   });
 };
 
+var generateImage = function (cartoon) {
+  if (document.getElementById("title").innerHTML == 'animal' || 'animals') {
+    var image = document.createElement("img");
+    image.src = "images/" + cartoon + ".png";
+    var src = document.getElementById('words');
+    src.appendChild(image);
+  }
+};
+
 function listenToClickOnWord() {
   document.getElementById('words').addEventListener('click',function (evt) {
     var target = evt.target;
+    var cartoon = target.innerHTML;
     document.getElementById('word' + wordIndex).innerHTML = target.innerHTML;
+    generateImage(cartoon);
   });
 }
 
