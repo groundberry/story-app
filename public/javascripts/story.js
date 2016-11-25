@@ -46,7 +46,8 @@ function listenToClickOnWord() {
     document.getElementById('word' + wordIndex).innerHTML = target.innerHTML;
     var pet = document.getElementById("title").innerHTML;
     console.log(pet);
-    if ( pet === 'animal' || 'animals') {
+    if (pet === 'animal' || pet === 'animals') {
+      console.log(false || 'animals');
       generateImage(cartoon);
     }
   });
