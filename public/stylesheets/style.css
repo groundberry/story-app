@@ -99,6 +99,14 @@ span {
   margin-left: 60px;
 }
 
+#picture {
+  margin: 0 70px;
+}
+
+img {
+  width: 48%;
+}
+
 .paint-frame {
   border-style: solid;
   border-color: #337ab7 ;
