@@ -12,3 +12,7 @@ function getSentence() {
 $(document).ready(function () {
   getSentence();
 });
+
+$(function() {
+  $('#simple_sketch').sketch();
+});
