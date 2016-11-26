@@ -6,7 +6,7 @@ var items = {
     'places': ["toilet", "sofa", "mat", "throne", "roof"],
     'food': ["pizza", "chocolate", "carrots", "chips", "lettuce"],
     'friend': ["Ruby", "Daisy", "Betty", "Anne", "Katy"],
-    'animal:': ["monkey", "zebra", "duck", "cow", "penguin"],
+    'animal': ["monkey", "zebra", "duck", "cow", "penguin"],
     'game': ["tag", "hide and seek", "sleeping lions", "hopscotch", "what's the time Mr Wolf"],
     'feelings': ["happy", "excited", "sleepy", "bored", "sad"]
   };
@@ -33,10 +33,25 @@ var updateWords = function (key) {
 };
 
 var generateImage = function (cartoon) {
-  var image = document.createElement('img');
-  image.src = "images/" + cartoon + ".png";
-  var src = document.getElementById('picture');
-  src.appendChild(image);
+  var pet = document.getElementById("title").innerHTML;
+  console.log(pet);
+
+  if (pet === 'animal' || pet === 'animals') {
+    console.log(pet === 'animal');
+    console.log(pet === 'animals');
+
+    var image = document.createElement('img');
+    console.log(image);
+
+    image.src = "images/" + cartoon + ".png";
+    console.log(image.src);
+
+    var src = document.getElementById('picture');
+    console.log(src);
+
+    src.appendChild(image);
+    console.log(src.appendChild(image));
+  }
 };
 
 function listenToClickOnWord() {
@@ -44,11 +59,7 @@ function listenToClickOnWord() {
     var target = evt.target;
     var cartoon = target.innerHTML;
     document.getElementById('word' + wordIndex).innerHTML = target.innerHTML;
-    var pet = document.getElementById("title").innerHTML;
-    console.log(pet);
-    if ( pet === 'animal' || 'animals') {
       generateImage(cartoon);
-    }
   });
 }
 
